@@ -11,11 +11,12 @@ Each folder contains the related exercises and instructions to run them. These a
 4. [File handling](04-file-handling/)
 5. [Modules and packages](05-modules-and-packages/)
 6. [Exception handling](05a-exception-handling/)
-7. [Mini-projects: number guessing and password checker](06-mini-projects/)
-8. [Streamlit apps](07-streamlit-apps/)
-9. [NumPy](08-numpy/)
-10. [Pandas analysis and Matplotlib graphs](09-pandas-analysis/)
-11. [Matplotlib car-sales charts](10-matplotlib-sales/)
+7. [Object-oriented programming](05b-object-oriented-programming/)
+8. [Mini-projects: number guessing and password checker](06-mini-projects/)
+9. [Streamlit apps](07-streamlit-apps/)
+10. [NumPy](08-numpy/)
+11. [Pandas analysis and Matplotlib graphs](09-pandas-analysis/)
+12. [Matplotlib car-sales charts](10-matplotlib-sales/)
 
 ## Run the notebooks
 Install Python and use VS Code with Python and Jupyter support, or JupyterLab. Install dependencies with `python -m pip install -r requirements.txt`. Open an `.ipynb` file, choose a Python kernel and run cells in order. Menu notebooks wait for input. Enter one price or order at a time and use `q` to quit.

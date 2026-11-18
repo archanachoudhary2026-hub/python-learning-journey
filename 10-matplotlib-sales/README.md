@@ -2,13 +2,14 @@
 
 This notebook uses Pandas to group car-sales data and Matplotlib to create line, scatter, vertical and horizontal bar, grouped bar, stacked bar, histogram and pie charts. Comparisons cover months, years, gender and selected dealer regions.
 
-## Dataset and setup
-The CSV is downloaded separately; it is not included in this repository.
+## Run the notebook
+1. Download or clone this repository. Keep all files in this folder together.
+2. Install the root `requirements.txt` dependencies.
+3. Open this folder in Jupyter or VS Code and run `Sales_Analysis.ipynb` with this folder as the working directory. Run the cells in order.
 
-1. Download `Car Sales.xlsx - car_data.csv` from the [Car Sales Report dataset on Kaggle](https://www.kaggle.com/datasets/missionjee/car-sales-report). A Kaggle sign-in may be required. The matching source page lists Apache 2.0 as its dataset licence. Follow the source terms when using the downloaded file.
-2. Place the CSV beside `Sales_Analysis.ipynb`, keeping that exact filename.
-3. Install the root `requirements.txt` dependencies, then open this folder in Jupyter or VS Code. Run the notebook with this folder as the working directory.
+No separate dataset download is needed. The notebook reads the included `sales_data.csv.gz.b64` file using Python standard-library Base64 and gzip decoding, then loads the CSV with Pandas. This compact text format preserves all 23,906 rows. The pie chart is also saved locally as `dealer_region_distribution.png`.
 
-The notebook loads only the five columns used in the analysis: Date, Gender, Annual Income, Price ($) and Dealer_Region. Customer names, phone numbers and other unused columns are not loaded. The charts use an external practice dataset, not my own customer records.
+## Dataset source and licence
+The practice data comes from the [Car Sales Report dataset on Kaggle](https://www.kaggle.com/datasets/missionjee/car-sales-report), whose source page lists Apache 2.0. A copy of that licence is in `DATA-LICENSE.txt`; it applies to the included dataset, not to all code in this repository.
 
-Run the cells in order. The pie chart is also saved locally as `dealer_region_distribution.png`.
+Changes to the source CSV: retained only Date, Gender, Annual Income, Price ($) and Dealer_Region, then saved as a gzip-compressed, Base64-encoded CSV. No rows were dropped. Customer names, phone numbers and other unused fields are excluded. This is fictional practice data, not my customer records. The original source CSV is not redistributed here.
